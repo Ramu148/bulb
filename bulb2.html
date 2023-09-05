@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(assert/blue\ parrot.jpg);           
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            background text-align: height: 50px;
+            margin-left: 500px;
+            background: 0%;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="container">
+            <h1 style="color: white;">LIGHT MODE</h1>
+            <img id="bulbImg" src="https://image.ibb.co/hoBxtm/light_bulb_off.png" alt="Blub">
+            <button id="bulb-button" type="button" onclick="changeBulbImage()">Bulb ON/OFF</button>	
+        </div>
+        <script>
+            var state = 0;
+		function changeBulbImage() {
+			if (state == 1) {
+				document.getElementById("bulbImg").src="https://image.ibb.co/hoBxtm/light_bulb_off.png";
+				state = 0;
+			} else {
+				document.getElementById("bulbImg").src="https://image.ibb.co/cBBaeR/light_bulb_on.png";
+				state = 1;
+			}
+		}
+        </script>
+        
+    
+      
+</body>
+</html>
